@@ -28,10 +28,11 @@ def gauss(A, B):
     return X
 
 def combinacao(vetores, vetor_alvo):
-  
+
     n = len(vetor_alvo)  # Tamanho do vetor alvo
     A = np.array(vetores)  # Matriz composta pelos vetores fornecidos
     B = np.array(vetor_alvo)  # Vetor alvo
+   # A função vai tentar resolver a eliminação gaussiana e se conseguir alguma solução, vai determinar que é combinação linear e printar os coeficientes que formam um vetor solução. 
 
     try:
         # Tentar resolver o sistema usando a função gauss
