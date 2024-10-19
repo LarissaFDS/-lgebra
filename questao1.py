@@ -1,6 +1,6 @@
 import numpy as np # type: ignore # Importando a biblioteca de computação numérica
 
-# Definição de vetoresaaaaaaaaaaaaa
+# Definição de vetores
 v = []
 v.append(np.array([1, 1j, 1], dtype='complex128'))
 v.append(np.array([4, 3, 2], dtype='complex128'))
