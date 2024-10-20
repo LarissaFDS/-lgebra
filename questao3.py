@@ -49,12 +49,6 @@ B_2, cov_matrix_2 = curve_fit(lambda i, B: fit_f(i, B, L_2), i, f_l2_novo)
 B_3, cov_matrix_3 = curve_fit(lambda i, B: fit_f(i, B, L_3), i, f_l3_novo)
 B_4, cov_matrix_4 = curve_fit(lambda i, B: fit_f(i, B, L_4), i, f_l4_novo)
 
-# Exibindo valores ajustados e as matrizes de covariância
-print(f"B_1 ajustado: {B_1[0]}, Matriz de Covariância: \n{cov_matrix_1}")
-print(f"B_2 ajustado: {B_2[0]}, Matriz de Covariância: \n{cov_matrix_2}")
-print(f"B_3 ajustado: {B_3[0]}, Matriz de Covariância: \n{cov_matrix_3}")
-print(f"B_4 ajustado: {B_4[0]}, Matriz de Covariância: \n{cov_matrix_4}")
-
 # Plotando o gráfico L1
 plt.scatter(i, f_l1_novo, c='r', label="L_1 obs")
 plt.plot(i, fit_f(i, B_1[0], L_1), c='r', label="L_1 pred")
