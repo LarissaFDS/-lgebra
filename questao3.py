@@ -55,16 +55,16 @@ print(f"B_2 ajustado: {B_2[0]}, Matriz de Covariância: \n{cov_matrix_2}")
 print(f"B_3 ajustado: {B_3[0]}, Matriz de Covariância: \n{cov_matrix_3}")
 print(f"B_4 ajustado: {B_4[0]}, Matriz de Covariância: \n{cov_matrix_4}")
 
-# Plotando o gráfico de teste para L_1 (como exemplo)
+# Plotando o gráfico L1
 plt.scatter(i, f_l1_novo, c='r', label="L_1 obs")
 plt.plot(i, fit_f(i, B_1[0], L_1), c='r', label="L_1 pred")
-
+# Plotando o gráfico L2
 plt.scatter(i, f_l2_novo, c='g', label="L_2 obs")
 plt.plot(i, fit_f(i, B_2[0], L_2), c='g', label="L_2 pred")
-
+# Plotando o gráfico L3
 plt.scatter(i, f_l3_novo, c='b', label="L_3 obs")
 plt.plot(i, fit_f(i, B_3[0], L_3), c='b', label="L_3 pred")
-
+# Plotando o gráfico L4
 plt.scatter(i, f_l4_novo, c='k', label="L_4 obs")
 plt.plot(i, fit_f(i, B_4[0], L_4), c='k', label="L_4 pred")
 
